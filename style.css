@@ -34,8 +34,12 @@ body {
     border: none;
     padding: 20px 25px;
     background-color: var(--highlight-color);
+    transition: 0.5s ease-in-out;
 }
-
+.btn-primary:hover{
+    background-color: var(--white-color);
+    color: var(--highlight-color);
+}
 img {
     height: 100%;
     width: 100%;
@@ -57,18 +61,23 @@ nav {
 .company-name {
     font-size: 2rem;
     letter-spacing: 2px;
+    cursor: pointer;
 }
 
 nav ul {
     display: flex;
+    list-style: none;
 }
 
-nav ul li {
-    list-style: none;
+nav ul li a {
     padding-right: 20px;
     color: #424242;
+    text-decoration: none;
+    transition: 0.4s ease;
 }
-
+nav ul li a:hover{
+    color:cornflowerblue;
+}
 /* Banner Section */
 .banner-container {
     display: flex;
@@ -85,7 +94,7 @@ nav ul li {
 
 .banner-title {
     font-size: 4rem;
-    padding-bottom: 100px;
+    padding-bottom: 50px;
 }
 
 .banner-description {
@@ -218,6 +227,7 @@ nav ul li {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     justify-content: space-around;
+    justify-items: center;
 }
 
 .some-fact-title {
@@ -236,8 +246,12 @@ nav ul li {
     padding: 15px;
     border-radius: 5px;
     text-align: center;
+    transition: transform 0.4s ease-in-out 0.4s;
 }
-
+.some-fact-box:hover{
+    background-color: rgb(238, 207, 207);
+    transform: rotate(360deg);
+}
 .some-fact-box img {
     width: 40px;
     height: 40px;
@@ -319,8 +333,16 @@ Media Query
     }
     /* navigation */
     nav{
+        margin-top: -20px;
         flex-direction: column;
-        gap: 40px;
+        gap: 20px;
+    }
+    .company-name h3{
+        font-size: 1.5rem;
+    }
+    nav ul li a {
+        font-size: 1rem;
+        margin-left: 10px;
     }
     /* Banner  */
     .banner-title{
