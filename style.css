@@ -373,11 +373,13 @@ nav ul li {
     }
     .sponsor-company-logo{
         flex-wrap: wrap;
+        gap: 20px;
         
     }
     .sponsor-logo img{
         height: 50px;
         width: 100px;
+        margin: 0;
     }
     .footer-text{
         font-size: 0.8rem;
@@ -386,7 +388,23 @@ nav ul li {
         width: 80vw;
     }
     *{
+        margin: 0 auto;
+    }
+    .header{
+        
+    }
+    .section-primary{
+        width: 100vw;
+        margin: 0 auto;
         max-width: 100%;
     }
-
+    .sf{
+        text-align: center;
+    }
+    .some-fact-section{
+        margin-bottom: 100px;
+    }
+    .footer{
+        margin-top: 50px;
+    }
 }
