@@ -37,7 +37,7 @@ body {
     transition: 0.5s ease-in-out;
 }
 .btn-primary:hover{
-    background-color: var(--white-color);
+    background-color: whitesmoke;
     color: var(--highlight-color);
 }
 img {
@@ -215,6 +215,11 @@ nav ul li a:hover{
 
 .experience-btn h1 {
     font-size: 3.5rem;
+    color: var(--white-color);
+}
+.experience-btn p{
+    font-size: 1.5rem;
+    color: var(--white-color);
 }
 
 /* Some Facts Section */
