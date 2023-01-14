@@ -65,6 +65,7 @@ nav ul {
 nav ul li {
     list-style: none;
     padding-right: 20px;
+    color: #424242;
 }
 
 /* Banner Section */
@@ -91,6 +92,7 @@ nav ul li {
     font-size: 1rem;
     font-weight: 500;
     padding-bottom: 32px;
+    color: var(--paragraph-color);
 }
 
 .banner-img {
@@ -148,41 +150,45 @@ nav ul li {
 }
 
 /* Love & Enjoy Section */
-.love-enjoy-container{
+.love-enjoy-container {
     display: flex;
     gap: 140px;
-    position: relative;
     margin-bottom: 130px;
+    position: relative;
 }
+
 .love-enjoy-box {
     padding: 30px;
     border-radius: 8px;
     box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
     margin: 20px 0;
-    height: 127px;
 }
-.love-enjoy-text{
+
+.love-enjoy-text {
     width: 50%;
 }
+
 .love-enjoy-img {
     width: 708px;
     height: 982px;
     width: 50%;
-    /* position: relative; */
 }
-.love-enjoy-text h1{
+
+.love-enjoy-text h1 {
     font-size: 2rem;
     font-weight: 700;
     padding-left: 20px;
     margin-bottom: 25px;
     border-left: 4px solid var(--highlight-color);
 }
-.love-enjoy-text p{
+
+.love-enjoy-text p {
     font-size: 1rem;
     font-weight: 700;
     color: var(--paragraph-color);
 }
-.experience-btn{
+
+.experience-btn {
     padding: 45px 42px;
     border-radius: 8px;
     background-color: var(--highlight-color);
@@ -191,6 +197,103 @@ nav ul li {
     bottom: 0%;
     left: 50%;
 }
-.experience-btn h1{
+
+.experience-btn h1 {
     font-size: 3.5rem;
+}
+
+/* Some Facts Section */
+.some-fact-section {
+    margin-bottom: 180px;
+}
+
+.some-fact-box-container {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.some-fact-title {
+    font-weight: 700;
+    font-size: 2.8rem;
+    padding-bottom: 20px;
+}
+.some-fact-description{
+    font-size: 1.1rem;
+    color: var(--paragraph-color);
+
+}
+.some-fact-box {
+    border: 1px solid var(--highlight-color);
+    width: 8vw;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.some-fact-box img {
+    width: 40px;
+    height: 40px;
+}
+
+.some-fact-box h1 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: 10px 0;
+}
+
+.some-fact-box p {
+    font-size: 1rem;
+    font-weight: 600;
+    padding-bottom: 25px;
+    color: var(--paragraph-color);
+}
+
+/* Sponsor Section */
+.section-sponsor{
+    margin-bottom: 130px;
+}
+.sponsor-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 50px;
+}
+.sponsor-logo{
+    width: 165px;
+    height: 50px;
+}
+.sponsor-text-container{
+    text-align: center;
+}
+.sponsor-text-container h1{
+    color: var(--dark-block);
+    font-weight: 700;
+    font-size: 2.8rem;
+}
+.sponsor-text-container p{
+    font-size: 1rem;
+    padding-top: 25px;
+    color: var(--paragraph-color);
+}
+.sponsor-logo img{
+    filter: grayscale(1);
+}
+.sponsor-company-logo{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Footer Section */
+.footer-text{
+    opacity: 0.7;
+    font-weight: 400;
+    font-size: 1.25rem;
+    padding: 40px 0;
+}
+.footer{
+    margin-bottom: 215px;
+    text-align: center;
+    border-radius: 8px;
+    background-color: var(--body-color);
 }
