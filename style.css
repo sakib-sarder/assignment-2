@@ -7,7 +7,7 @@
     --highlight-color: #FF900E;
     --paragraph-color: #727272;
     --white-color: #ffffff;
-    --dark-block: #131313;
+    --dark-black: #131313;
 }
 
 /* Common Styles */
@@ -132,7 +132,7 @@ nav ul li {
 }
 
 .second-two {
-    color: var(--dark-block);
+    color: var(--dark-black);
 }
 
 .third-one {
@@ -274,7 +274,7 @@ nav ul li {
     text-align: center;
 }
 .sponsor-text-container h1{
-    color: var(--dark-block);
+    color: var(--dark-black);
     font-weight: 700;
     font-size: 2.8rem;
 }
@@ -305,14 +305,18 @@ nav ul li {
     background-color: var(--body-color);
 }
 
-
-
-
-
 /* ----------------
-    Media Query
+Media Query
 ------------------- */
 @media only screen and (max-width:576px) {
+    *{
+        margin: 0 auto;
+    }
+    .section-primary{
+        width: 100vw;
+        margin: 0 auto;
+        max-width: 100%;
+    }
     /* navigation */
     nav{
         flex-direction: column;
@@ -326,15 +330,13 @@ nav ul li {
         width: 70vw;
     }
     .banner-img{
-        width: 70vw;
-    }
-    .banner-img{
-        width: 80%;
+        width: 95%;
         height: 40vh;
         margin: 0 auto;
     }
     /* Features  */
     .features-container{
+        margin-bottom: 50px;
         flex-direction: column-reverse;
     }
     .features-images-container{
@@ -342,6 +344,10 @@ nav ul li {
     }
     .features-text-container{
         text-align: center;
+        width: 95vw;
+    }
+    .features-img{
+        width: 90vw;
     }
     /* Love and Enjoy */
     .love-enjoy-container{
@@ -368,43 +374,32 @@ nav ul li {
     .some-fact-box{
         width: 100px;
     }
+    .some-fact-text-container{
+        text-align: center;
+    }
+    .some-fact-section{
+        margin-bottom: 100px;
+    }
+    /* Sponsor Section */
     .sponsor-container{
         text-align: center;
     }
     .sponsor-company-logo{
         flex-wrap: wrap;
-        gap: 20px;
-        
+        gap: 20px; 
     }
     .sponsor-logo img{
         height: 50px;
         width: 100px;
         margin: 0;
     }
-    .footer-text{
-        font-size: 0.8rem;
-    }
-    .features-img{
-        width: 80vw;
-    }
-    *{
-        margin: 0 auto;
-    }
-    .header{
-        
-    }
-    .section-primary{
-        width: 100vw;
-        margin: 0 auto;
-        max-width: 100%;
-    }
-    .sf{
-        text-align: center;
-    }
-    .some-fact-section{
-        margin-bottom: 100px;
-    }
+    /* Footer Section */
     .footer{
         margin-top: 50px;
     }
+    .footer-text{
+        font-size: 0.8rem;
+    }
 }
+
+
