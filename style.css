@@ -37,7 +37,7 @@ body {
     transition: 0.5s ease-in-out;
 }
 .btn-primary:hover{
-    background-color: whitesmoke;
+    background-color: rgb(37, 37, 43);
     color: var(--highlight-color);
 }
 img {
@@ -275,6 +275,38 @@ nav ul li a:hover{
     color: var(--paragraph-color);
 }
 
+/* Popular Projects Section Starts */
+.project-box img{
+    width: 300px;
+    height: 200px;
+    border-radius: 8px;
+}
+.popular-project-title{
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+.project-box{
+    border-radius: 8px;
+    width: 300px;
+    padding: 25px;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
+}
+.popular-projects-container{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 100px;
+}
+.project-box h3{
+    padding: 15px 0;
+    font-size: 2rem;
+    color: var(--dark-black);
+}
+.project-box p{
+    font-size: 1rem;
+    color: var(--paragraph-color);
+}
+
 /* Sponsor Section */
 .section-sponsor{
     margin-bottom: 130px;
@@ -324,29 +356,6 @@ nav ul li a:hover{
     background-color: var(--body-color);
 }
 /* Extra  */
-.project-box img{
-    width: 300px;
-    height: 200px;
-    border-radius: 8px;
-}
-.project-box{
-    border-radius: 8px;
-    width: 300px;
-    padding: 25px;
-    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
-}
-.popular-projects-container{
-    display: flex;
-    justify-content: space-around;
-}
-.project-box h3{
-    font-size: 2rem;
-    color: var(--dark-black);
-}
-.project-box p{
-    font-size: 1rem;
-    color: var(--paragraph-color);
-}
 /* ----------------
 Media Query
 ------------------- */
@@ -401,7 +410,8 @@ Media Query
     }
     /* Love and Enjoy */
     .love-enjoy-container{
-        flex-direction: column-reverse;
+        flex-direction: column;
+        gap: 30px;
     }
     .love-enjoy-text, .love-enjoy-img{
         width: 80vw;
@@ -430,6 +440,20 @@ Media Query
     .some-fact-section{
         margin-bottom: 100px;
     }
+    /* Popular Projects Section Starts */
+    .popular-projects-container{
+        flex-direction: column;
+        max-width: 100%;
+        gap: 20px;
+    }
+    .project-box{
+        width: 80vw;
+    }
+    .project-box img{
+        width: 100%;
+        height: 100%;
+    }
+
     /* Sponsor Section */
     .sponsor-container{
         text-align: center;
@@ -449,19 +473,6 @@ Media Query
     }
     .footer-text{
         font-size: 0.8rem;
-    }
-    /* extra */
-    .popular-projects-container{
-        flex-direction: column;
-        max-width: 100%;
-        gap: 20px;
-    }
-    .project-box{
-        width: 70vw;
-    }
-    .project-box img{
-        width: 100%;
-        height: 100%;
     }
 }
 
